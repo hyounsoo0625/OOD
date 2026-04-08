@@ -23,7 +23,7 @@ def parse_args():
     parser.add_argument("--model", type=str, default="yoloe-11l-seg.pt")
     parser.add_argument("--ann_file", type=str, default="../data/coco/annotations/instances_val2017.json")
     parser.add_argument("--img_dir", type=str, default="../data/coco/val2017")
-    parser.add_argument("--samples_per_class", type=int, default=20, help="Number of images to sample PER CLASS")
+    parser.add_argument("--samples_per_class", type=int, default=30, help="Number of images to sample PER CLASS")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--save_dir", type=str, default="./analysis")
     parser.add_argument("--save_prefix", type=str, default="all_corruptions_shift")
