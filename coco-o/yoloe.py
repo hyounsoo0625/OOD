@@ -16,7 +16,6 @@ from tqdm import tqdm
 def parse_args():
     parser = argparse.ArgumentParser(description="YOLOE Domain Distance Visualization (All Data)")
     parser.add_argument("--model", type=str, default="yoloe-11l-seg.pt")
-    # 샘플 제한 인자(--num_samples) 제거됨
     parser.add_argument("--domains", type=str, nargs='+', default=["cartoon", "handmake", "painting", "sketch", "tattoo", "weather"])
     parser.add_argument("--data_dir", type=str, default="../data")
     parser.add_argument("--seed", type=int, default=42)
