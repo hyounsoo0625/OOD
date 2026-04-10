@@ -26,9 +26,9 @@ for corr in corruptions:
 heatmap_data = np.array(channel_stds)
 
 # 상위 50개 채널만 시각화 (가독성을 위함)
-heatmap_data = heatmap_data[:, :50] 
+heatmap_data = heatmap_data[:, :] 
 
-fig, ax = plt.subplots(figsize=(12, 14))
+fig, ax = plt.subplots(figsize=(32, 14))
 sns.heatmap(heatmap_data, cmap="YlOrRd", cbar_kws={'label': 'Mean Absolute Deviation'}, ax=ax)
 
 ax.set_yticklabels([c.replace('_', ' ').title() for c in corruptions], rotation=0, fontsize=12)
