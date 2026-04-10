@@ -47,8 +47,6 @@ soupsieve==2.8.3
 sympy==1.14.0
 threadpoolctl==3.6.0
 tifffile==2024.8.30
-torch==2.8.0+cu126
-torchvision==0.23.0+cu126
 tqdm==4.67.3
 typing_extensions==4.15.0
 tzdata==2026.1
